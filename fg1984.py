@@ -23,10 +23,10 @@ screen.fill(background_color)
 
 # Set up the winston
 winston_size = 24
-winston_color = (255, 0, 0)  # red
+winston_color = (255,255,0)  # yellow
 winston_x = screen_width // 2 - winston_size // 2
 winston_y = screen_height // 2 - winston_size // 2
-winston_speed = 25
+winston_speed = 30
 
 # Set up the borders
 border_size = 16
@@ -41,8 +41,8 @@ book_font = pygame.font.SysFont(None, 24)
 
 # Set up the interactive books
 book_size = 12
-book_color = (0, 0, 255)  # blue
-book_x = [300]
+book_color = (0,0,0)  # black
+book_x = [400]
 book_y = [200]
 write_text = "Press Enter to Write:"
 book_text = book_font.render("DOWN WITH BIG BROTHER DOWN WITH BIG BROTHER DOWN WITH BIG BROTHER", True, (0, 0, 0))
@@ -51,9 +51,9 @@ show_book = False
 
 # Set up interactive poster
 poster_size = 16
-poster_color = (0, 0, 255)  # blue
-poster_x = [500]
-poster_y = [200]
+poster_color = (255, 0, 0)  # red
+poster_x = [200]
+poster_y = [500]
 read_text = "Press Enter to Read:"
 poster_text=book_font.render("WAR IS PEACE FREEDOM IS SLAVERY IGNORANCE IS STRENGTH",True,(0,0,0))
 poster_text_rect=poster_text.get_rect(center=(screen_width // 2, screen_height // 2 - 20))
@@ -61,21 +61,21 @@ show_poster=False
 
 # Set up Julia
 julia_size = 32
-julia_color = (0, 0, 255)  # blue
-julia_x = [250]
+julia_color = (255,0,255)  # pink
+julia_x = [700]
 julia_y = [120]
 read_text = "Press Enter to Interact:"
-julia_text=book_font.render("Hi I'm Julia",True,(0,0,0))
+julia_text=book_font.render("It was something in your face.... As soon as I saw you I knew you were against THEM",True,(0,0,0))
 julia_text_rect=julia_text.get_rect(center=(screen_width // 2, screen_height // 2 - 20))
 show_julia=False
 
 # Set up O'Brien
 obrien_size = 32
-obrien_color = (255, 0, 0)  # blue
+obrien_color = (255, 0, 0)  # red
 obrien_x = [100]
 obrien_y = [120]
 read_text = "Press Enter to Interact:"
-obrien_text=book_font.render("ASDF",True,(0,0,0))
+obrien_text=book_font.render("There is no loyalty but loyalty to the Party. There is no love except love of Big Brother...",True,(0,0,0))
 obrien_text_rect=obrien_text.get_rect(center=(screen_width // 2, screen_height // 2 - 20))
 show_obrien=False
 
